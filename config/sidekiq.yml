@@ -1,0 +1,16 @@
+:concurrency: 25
+:queues:
+  - <%= Socket.gethostname %>
+  - critical
+  - periodic
+  - default
+  - aggregator
+  - setter
+  - publisher
+development:
+  :concurrency: 5
+  :queues:
+    - <%= Socket.gethostname %>
+    - critical
+    - periodic
+    - default
